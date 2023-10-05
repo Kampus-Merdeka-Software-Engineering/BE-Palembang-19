@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/css/navstyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="icon" href="/Images/favicon.svg" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="transparent-bg">
+      <div></div>
+      <div class="logo">
+        <a href="/Pages/index.html">
+          <div id="logo"><img src="/Images/logo.png" alt="Home" /></div>
+        </a>
+      </div>
+      <div>
+        <ul>
+          <li><a href="/Pages/tentangkami.html">Tentang Kami</a></li>
+          <li><a href="/Pages/send.html">Kirim Paket</a></li>
+          <li><a href="/Pages/Cekresi.html">Cek Resi</a></li>
+          <li><a href="/Pages/location.html">Cek Lokasi</a></li>
+          <li><a href="/Pages/layanan.html">Layanan</a></li>
+          <li class="btn-login">
+            <a href="/Pages/login.html">Login/Register</a>
+          </li>
+        </ul>
+      </div>
+      <div></div>
+    </nav>
+    <!-- BACKGROUND SCRIPT -->
+    <script>
+      const navbar = document.querySelector("nav");
+      const scrollThreshold = 100;
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > scrollThreshold) {
+          navbar.classList.add("white-bg");
+          navbar.classList.remove("transparent-bg");
+        } else {
+          navbar.classList.add("transparent-bg");
+          navbar.classList.remove("white-bg");
+        }
+      });
+    </script>
+  </body>
+</html>

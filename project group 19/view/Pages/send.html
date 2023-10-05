@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kirim Paket</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/styles1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("header.html");
+      });
+    </script>
+    <!--end of Navigation bar-->
+
+    <div class="container-7">
+      <div class="send-heading">
+        <p>Kirim <b>Paket</b></p>
+      </div>
+      <script src="form-validation.js"></script>
+      <form class="send-form" action="" id="myForm">
+        <div class="identitas">
+          <div class="pengirim">
+            <p><b>Pengirim</b></p>
+            <div class="input-send">
+              <label for="nama-lengkap">Nama Lengkap</label>
+              <input
+                type="text"
+                name="nama-lengkap"
+                id="nama-lengkap"
+                placeholder=""
+                required
+              />
+            </div>
+            <div class="input-send">
+              <label for="alamat">Alamat</label>
+              <input
+                type="text"
+                name="alamat"
+                id="alamat"
+                placeholder=""
+                required
+              />
+            </div>
+            <div class="input-send">
+              <label for="no-telepon">Nomor Telepon</label>
+              <input
+                type="text"
+                name="no-telepon"
+                id="no-telepon"
+                placeholder=""
+                required
+              />
+            </div>
+          </div>
+          <div class="penerima">
+            <p><b>Penerima</b></p>
+            <div class="input-send">
+              <label for="nama-lengkap">Nama Lengkap</label>
+              <input
+                type="text"
+                name="nama-lengkap"
+                id="nama-lengkap"
+                placeholder=""
+                required
+              />
+            </div>
+            <div class="input-send">
+              <label for="alamat">Alamat</label>
+              <input
+                type="text"
+                name="alamat"
+                id="alamat"
+                placeholder=""
+                required
+              />
+            </div>
+            <div class="input-send">
+              <label for="no-telepon">Nomor Telepon</label>
+              <input
+                type="text"
+                name="no-telepon"
+                id="no-telepon"
+                placeholder=""
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="detail-barang">
+          <div class="detail-header">
+            <p><b>Detail Barang</b></p>
+          </div>
+          <div class="detail-content">
+            <div class="left">
+              <div class="left-left">
+                <div class="input-send">
+                  <label for="berat-barang">Berat Barang</label>
+                  <input
+                    type="text"
+                    name="berat-barang"
+                    id="berat-barang"
+                    placeholder=""
+                    required
+                  />
+                </div>
+                <div class="input-send">
+                  <label for="tipe-barang">Tipe Barang</label>
+                  <select name="tipe-barang" id="tipe-barang">
+                    <option value="Baju">Baju</option>
+                    <option value="Elektronik">Elektronik</option>
+                    <option value="Frozen Food">Frozen Food</option>
+                    <option value="Kesehatan & Kecantikan">
+                      Kesehatan & Kecantikan
+                    </option>
+                    <option value="Lainnya">Lainnya</option>
+                  </select>
+                </div>
+              </div>
+              <div class="left-right">
+                <p>kg</p>
+                <div class="input-send">
+                  <label for="tipe-layanan">Tipe Layanan</label>
+                  <select name="tipe-layanan" id="tipe-layanan">
+                    <option value="Instant-Delivery">Instant Delivery</option>
+                    <option value="Hori-Send">Hori-Send</option>
+                    <option value="EcoRoute">EcoRoute</option>
+                    <option value="Gadget-Guard">Gadget Guard</option>
+                    <option value="Bulk-Saver">Bulk Saver</option>
+                    <option value="Horizon-Paws">Horizon Paws</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <div class="input-send">
+                <label for="metode">Metode</label>
+                <select name="metode" id="metode">
+                  <option value="Drop-Off">Drop-Off</option>
+                  <option value="Pick-Up">Pick-Up</option>
+                </select>
+              </div>
+              <p>Total Biaya</p>
+              <p>
+                Rp. <span><b>12.000</b></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="send-btn">
+          <button>
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                <svg
+                  height="24"
+                  width="24"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <span><b>Kirim</b></span>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!--Footer-->
+    <div id="foot-placeholder"></div>
+
+    <script>
+      $(function () {
+        $("#foot-placeholder").load("footer.html");
+      });
+    </script>
+    <!--end of Footer-->
+  </body>
+</html>

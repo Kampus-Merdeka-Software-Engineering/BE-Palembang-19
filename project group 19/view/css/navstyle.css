@@ -1,0 +1,87 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.transparent-bg {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.white-bg {
+  background-color: #cad2c5;
+}
+
+nav {
+  font-family: "Inter";
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+#logo img {
+  height: 20px;
+}
+
+ul {
+  position: relative;
+  font-size: 13px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+}
+
+ul:hover::after {
+  width: 100%;
+}
+
+ul li {
+  position: relative;
+  margin: 0 20px;
+}
+
+ul li:not(.btn-login)::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #354f52;
+  transition: width 0.2s ease-in-out;
+}
+
+ul li:not(.btn-login):hover::after {
+  width: 100%;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ul .btn-login {
+  padding: 9px 9px;
+  background-color: #789d85;
+  border-radius: 9px;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+ul .btn-login:hover {
+  background-color: #52796f;
+}
+
+ul .btn-login:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(53, 79, 82, 0.5);
+}

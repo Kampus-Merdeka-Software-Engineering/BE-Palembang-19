@@ -1,0 +1,42 @@
+* {
+  font-family: "Inter";
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 0;
+}
+
+.footer-distributed {
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 30px 50px;
+}
+
+.footer-distributed img {
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+.footer-distributed p {
+  font-size: 13px;
+  margin: 0;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

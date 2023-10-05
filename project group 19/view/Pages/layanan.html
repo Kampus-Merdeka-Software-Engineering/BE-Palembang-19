@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layanan</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/styles1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("header.html");
+      });
+    </script>
+    <!--end of Navigation bar-->
+
+    <div class="container-6">
+      <div class="services-heading">
+        <p>Our <b>Services</b></p>
+      </div>
+      <div class="services-card">
+        <div class="scard">
+          <lord-icon
+            src="https://cdn.lordicon.com/qmuwmmnl.json"
+            trigger="hover"
+            colors="primary:#000000"
+            style="width: 50px; height: 50px; margin-bottom: 25px"
+          >
+          </lord-icon>
+          <b class="second-text">Instant Delivery</b>
+          <p class="third-text">
+            Pengiriman cepat dan aman. Paket sampai di tangan anda kurang dari
+            24 jam
+          </p>
+        </div>
+        <div class="scard">
+          <span class="material-icons"> public </span>
+          <b class="second-text">Hori-Send</b>
+          <p class="third-text">
+            Pengiriman terjamin untuk memastikan pesanan sampai di tangan anda
+            dengan aman
+          </p>
+        </div>
+        <div class="scard">
+          <span class="material-icons"> forest </span>
+          <b class="second-text">EcoRoute</b>
+          <p class="third-text">
+            Untuk anda yang ingin ikut serta mengurangi emisi karbon dengan
+            pengiriman ramah lingkungan
+          </p>
+        </div>
+        <div class="scard">
+          <span class="material-icons"> devices </span>
+          <b class="second-text">Gadget Guard</b>
+          <p class="third-text">
+            Solusi khusus untuk barang elektronik dengan penjagaan dan
+            pengawasan ketat
+          </p>
+        </div>
+        <div class="scard">
+          <span class="material-icons"> local_shipping </span>
+          <b class="second-text">Bulk Saver</b>
+          <p class="third-text">
+            Solusi paling hemat bagi anda yang ingin mengirim banyak barang
+            sekaligus secara berkala
+          </p>
+        </div>
+        <div class="scard">
+          <span class="material-icons"> pets </span>
+          <b class="second-text">Horizon Paws</b>
+          <p class="third-text">
+            Membawa teman berbulu anda menjelajahi dunia dengan penjagaan
+            spesial ke tujuan
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div id="foot-placeholder"></div>
+
+    <script>
+      $(function () {
+        $("#foot-placeholder").load("footer.html");
+      });
+    </script>
+    <!--end of Footer-->
+  </body>
+</html>

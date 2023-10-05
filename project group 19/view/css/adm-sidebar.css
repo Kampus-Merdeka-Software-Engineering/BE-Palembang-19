@@ -1,0 +1,42 @@
+body {
+  background-color: #cad2c5;
+  font-family: "inter";
+  font-size: 13px;
+}
+
+.sidebar {
+  margin: 10px 10px;
+  padding: 0;
+  width: 200px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar img {
+  width: 185px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.sidebar-link a {
+  display: block;
+  color: black;
+  padding: 13px;
+  margin: 10px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.sidebar-link a span {
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.sidebar-link a.active {
+  background-color: #84a98c;
+}
+
+.sidebar-link a:hover:not(.active) {
+  background-color: #84a98c;
+}

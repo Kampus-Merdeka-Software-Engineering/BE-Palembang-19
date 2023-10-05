@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/styles1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("header.html");
+      });
+    </script>
+    <!--end of Navigation bar-->
+
+    <div class="content-reg">
+      <div class="form-container">
+        <div class="wrapper">
+          <form name="signin" class="form">
+            <div class="input-control">
+              <label for="text" class="input-label" hidden>Name</label>
+              <img src="/Images/username.svg" alt="name" />
+              <input
+                type="text"
+                name="text"
+                id="text"
+                class="input-field"
+                placeholder="Nama"
+              />
+            </div>
+            <div class="input-control">
+              <label for="text" class="input-label" hidden>Email</label>
+              <img src="/Images/email.svg" alt="email" />
+              <input
+                type="text"
+                name="text"
+                id="text"
+                class="input-field"
+                placeholder="E-mail"
+              />
+            </div>
+            <div class="input-control">
+              <label for="text" class="input-label" hidden>Username</label>
+              <img src="/Images/username.svg" alt="username" />
+              <input
+                type="text"
+                name="text"
+                id="text"
+                class="input-field"
+                placeholder="Username"
+              />
+            </div>
+            <div class="input-control">
+              <label for="password" class="input-label" hidden>Password</label>
+              <img src="/Images/password.svg" alt="password" />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="input-field"
+                placeholder="Password"
+              />
+            </div>
+            <div class="input-control">
+              <input
+                type="submit"
+                name="submit"
+                class="input-submit"
+                value="Register"
+                disabled
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="form-text">
+        <p><b>Register</b> to</p>
+        <img src="/Images/logo.png" alt="logo-form" />
+        <div class="form-text-register">
+          <p>Sudah punya akun? <a href="/Pages/login.html">Klik disini.</a></p>
+        </div>
+      </div>
+    </div>
+    <footer class="green-bg">TEST</footer>
+  </body>
+</html>

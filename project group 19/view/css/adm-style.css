@@ -1,0 +1,154 @@
+body {
+  background-color: #cad2c5;
+  font-family: "inter";
+}
+
+.container-1 {
+  display: flex;
+}
+
+.content-1 {
+  margin-left: 220px;
+  margin-right: 20px;
+  margin-top: 90px;
+  border-radius: 20px;
+  width: 100%;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.title {
+  margin: 50px 50px;
+  font-size: 30px;
+  color: #354f52;
+}
+
+.container-overview {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.top,
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px;
+  margin-bottom: 30px;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+  background-color: #cad2c5;
+  display: flex;
+  width: 400px;
+  height: 130px;
+  border-radius: 20px;
+}
+
+.text-left,
+.icon-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-left {
+  width: 60%;
+}
+
+.icon-right {
+  width: 40%;
+}
+
+.icon-right span {
+  font-size: 70px;
+  background-color: #354f52;
+  color: #f5f5f5;
+  border-radius: 12px;
+  padding: 5px 5px;
+}
+
+.text-left b,
+.text-left p {
+  margin: 3px 0;
+  padding: 0;
+}
+
+.container-overview b {
+  color: #354f52;
+  font-size: 40px;
+}
+
+.container-overview p {
+  font-size: 20px;
+}
+
+.container-table {
+  margin: 0 50px;
+}
+
+.title-2 {
+  font-size: 30px;
+  color: #354f52;
+}
+
+.table-order,
+.table-status {
+  margin-bottom: 50px;
+}
+
+table {
+  width: 100%;
+  background-color: #cad2c5;
+  border-radius: 12px;
+}
+
+th,
+td {
+  padding: 15px;
+  font-size: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.title-status {
+  margin: 50px 0;
+  font-size: 30px;
+  color: #354f52;
+}
+
+.Edit {
+  position: relative;
+  overflow: hidden;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #354f52;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.Delete {
+  position: relative;
+  overflow: hidden;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #a04b4b;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.Edit:hover {
+  background-color: #2c4345;
+}
+
+.Delete:hover {
+  background-color: #914141;
+}

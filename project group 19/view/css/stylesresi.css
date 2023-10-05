@@ -1,0 +1,168 @@
+body {
+  font-family: "Inter";
+  margin: 0;
+  background-color: #f8f9f5;
+}
+.transparent-bg {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.white-bg {
+  background-color: #cad2c5;
+}
+
+#logo img {
+  height: 20px;
+}
+
+.resihead {
+  justify-content: center;
+  padding: 100px;
+  width: 100px;
+  height: 100px;
+}
+
+.container-5 {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+  width: 100%;
+}
+
+.heading-container p {
+  font-size: 40px;
+  color: #354f52;
+}
+
+.search {
+  position: relative;
+}
+
+.searchInput {
+  width: 500px;
+  height: 2rem;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: #e4e4e4;
+}
+
+::placeholder {
+  color: #969696;
+}
+
+/* hide the placeholder text on focus */
+:focus::placeholder {
+  text-indent: -999px;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.searchInputIcon {
+  position: absolute;
+  right: 0.8rem;
+  top: 0.5rem;
+  color: #969696;
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+.container-3 {
+  background-color: #cad2c5;
+  border-radius: 1rem 1rem 1rem 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+  max-width: 1040px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+#proses-pengiriman {
+  flex: 1;
+  align-items: center;
+}
+#informasi-paket {
+  background-color: #cad2c5;
+  flex: 1;
+  padding: 1rem;
+  border-radius: 1rem;
+  z-index: 2;
+}
+.column {
+  float: left;
+  width: 31%;
+  padding: 10px;
+  height: 30px;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 4px;
+  align-items: center;
+  justify-items: center;
+  margin-top: 50px;
+}
+.container-3 img {
+  border-radius: 50%;
+  background: #fff;
+}
+.img-1 img {
+  border-radius: 50%;
+  background: #84a98c;
+}
+#text {
+  text-align: center;
+  color: #354f52;
+  font-size: 22px;
+}
+#container-2 {
+  display: flex;
+  border-radius: 1rem;
+  justify-content: space-evenly;
+  gap: 1rem;
+  flex-direction: row;
+  padding: 1rem;
+  max-width: 1071px;
+  margin: 0 auto;
+  color: #354f52;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 1em;
+}
+h3 {
+  font-weight: bold;
+}
+td {
+  font-size: 18px;
+}
+.container {
+  position: relative;
+}
+
+.garis {
+  position: absolute;
+  top: 40%;
+  width: 60%;
+  right: 20%;
+  height: 5px; 
+  background-color: #ffffff; 
+  z-index: -1;
+}

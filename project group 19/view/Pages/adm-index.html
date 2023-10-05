@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/adm-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-1">
+      <div id="sb-placeholder"></div>
+
+      <script>
+        $(function () {
+          $("#sb-placeholder").load("adm-sidebar.html");
+        });
+      </script>
+      <div class="content-1">
+        <div class="title">
+          <b>Overview</b>
+        </div>
+        <div class="container-overview">
+          <div class="top">
+            <div class="card-1">
+              <div class="text-left">
+                <b>50</b>
+                <p>Pesanan Baru</p>
+              </div>
+              <div class="icon-right">
+                <span class="material-symbols-outlined"> text_snippet </span>
+              </div>
+            </div>
+            <div class="card-2">
+              <div class="text-left">
+                <b>20</b>
+                <p>Proses</p>
+              </div>
+              <div class="icon-right">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="card-3">
+              <div class="text-left">
+                <b>70</b>
+                <p>Pengiriman</p>
+              </div>
+              <div class="icon-right">
+                <span class="material-symbols-outlined"> local_shipping </span>
+              </div>
+            </div>
+            <div class="card-4">
+              <div class="text-left">
+                <b>15</b>
+                <p>Sampai Tujuan</p>
+              </div>
+              <div class="icon-right">
+                <span class="material-symbols-outlined"> house </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-table">
+          <div class="title-2">
+            <p>Pesanan <b>Terakhir</b></p>
+          </div>
+          <div class="table-order">
+            <table>
+              <tr>
+                <th>No</th>
+                <th>Resi</th>
+                <th>Lokasi</th>
+                <th>Status</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>HRZNXXXXXXX</td>
+                <td>Jakarta</td>
+                <td>Proses</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>HRZNXXXXXXX</td>
+                <td>Semarang</td>
+                <td>Pengiriman</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>HRZNXXXXXXX</td>
+                <td>Bogor</td>
+                <td>Sampai Tujuan</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>HRZNXXXXXXX</td>
+                <td>Bandung</td>
+                <td>Pesanan Baru</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>HRZNXXXXXXX</td>
+                <td>Surga</td>
+                <td>Proses</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br /><br />
+  </body>
+</html>
