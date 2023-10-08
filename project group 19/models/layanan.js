@@ -8,7 +8,7 @@ const Layanan = sequelize.define("Layanan", {
         autoIncrement: true, 
         allowNull: false,
     },
-    layanan: {
+    jenis_layanan: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {

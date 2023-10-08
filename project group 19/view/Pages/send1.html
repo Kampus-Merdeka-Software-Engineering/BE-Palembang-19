@@ -23,7 +23,7 @@
 
     <script>
       $(function () {
-        $("#nav-placeholder").load("header.html");
+        $("#nav-placeholder").load("header1.html");
       });
     </script>
     <!--end of Navigation bar-->
@@ -164,25 +164,60 @@
         </div>
       </form>
       <div class="send-btn">
-        <button>
-          <div class="svg-wrapper-1">
-            <div class="svg-wrapper">
-              <svg
-                height="24"
-                width="24"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0 0h24v24H0z" fill="none"></path>
-                <path
-                  d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-                  fill="currentColor"
-                ></path>
-              </svg>
+        <a href="#popup">
+          <button>
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                <svg
+                  height="24"
+                  width="24"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
             </div>
-          </div>
-          <span><b>Kirim</b></span>
-        </button>
+            <span><b>Kirim</b></span>
+          </button>
+        </a>
+      </div>
+      <div class="popup" id="popup">
+        <div class="credit-card-form">
+          <a href="#" class="popup-close">&times;</a>
+          <b>Pembayaran</b>
+          <form>
+            <div class="form-group">
+              <label for="card-number">Nomor Kartu</label>
+              <input type="text" id="card-number" placeholder="Nomor kartu" />
+            </div>
+            <div class="form-group">
+              <label for="card-holder">Nama Pemegang</label>
+              <input type="text" id="card-holder" placeholder="Nama pemegang" />
+            </div>
+            <div class="form-row">
+              <div class="form-group form-column">
+                <label for="expiry-date">Tanggal Kadaluarsa</label>
+                <input type="text" id="expiry-date" placeholder="MM/YY" />
+              </div>
+              <div class="form-group form-column">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="CVV" />
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="click-button"
+              onclick="showLoading(event, this)"
+            >
+              Bayar Sekarang - Rp(TOTAL)
+            </button>
+          </form>
+        </div>
       </div>
     </div>
 
@@ -194,6 +229,8 @@
         $("#foot-placeholder").load("footer.html");
       });
     </script>
+
+    <script src="/js/payment.js"></script>
     <!--end of Footer-->
   </body>
 </html>

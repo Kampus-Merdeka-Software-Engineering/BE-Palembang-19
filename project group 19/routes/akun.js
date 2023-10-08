@@ -1,8 +1,12 @@
-import express, { Router } from "express";
-import { postCreateAkun } from "../controllers/akun.js";
+import express, { Router, response } from "express";
+import { all, postCreateAkun } from "../controllers/akun.js";
+import { postCreateLayanan } from "../controllers/layanan.js";
 
 const akunRouter = Router();
 
-akunRouter.post("/", postCreateAkun);
+akunRouter.post("/", postCreateLayanan);
+
+akunRouter.get("/", all);
 
 export default akunRouter;
+

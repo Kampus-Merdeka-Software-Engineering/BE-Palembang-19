@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/tentangkami.css" />
+    <link rel="stylesheet" type="text/css" href="/css/navstyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/imageslider.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("header.html");
+      });
+    </script>
+    <!--end of Navigation bar-->
+
+    <!---Image Slider-->
+    <div class="wrapper">
+      <div class="slides">
+        <span id="slide-1"></span>
+        <span id="slide-2"></span>
+        <span id="slide-3"></span>
+        <span id="slide-4"></span>
+        <div class="images">
+          <img src="/Images/kirim1.png" />
+          <img src="/Images/kirim2.png" />
+          <img src="/Images/kirim3.png" />
+          <img src="/Images/kirim4.png" />
+        </div>
+      </div>
+      <!---NAVIGASI GAMBAR-->
+      <div class="navigation">
+        <a href="#slide-1">1</a>
+        <a href="#slide-2">2</a>
+        <a href="#slide-3">3</a>
+        <a href="#slide-4">4</a>
+      </div>
+    </div>
+    <!---End of Image Slider-->
+
+    <!---About Us-->
+    <div class="container1">
+      <p><b>Horizon</b> Express</p>
+    </div>
+    <div class="container2">
+      <p>
+        Horizon Express adalah perusahaan pengiriman yang berdedikasi untuk
+        memberikan layanan berkualitas tinggi dalam industri logistik. Kami
+        muncul sebagai pemain yang kuat dengan komitmen yang mendalam untuk
+        memperbaiki pengalaman pengiriman pelanggan. Kami bangga atas apa yang
+        telah kami capai dalam dunia pengiriman, dan kami selalu berusaha
+        memberikan yang terbaik. Dengan berfokus pada integritas, inovasi, dan
+        keunggulan dalam semua aspek bisnis kami, kami terus mencari cara untuk
+        membuat proses pengiriman menjadi lebih baik.
+      </p>
+    </div>
+    <div class="container1">
+      <p><b>Contact</b> Us</p>
+    </div>
+    <div class="container3">
+      <span class="material-symbols-outlined"> location_on </span>
+      <p>57, Jalan Profesor Mochammad Yamin, Menteng, DKI Jakarta 10310</p>
+    </div>
+    <div class="container4">
+      <span class="material-symbols-outlined"> call </span>
+      <p>021-4567-999</p>
+    </div>
+    <div class="container5">
+      <span class="material-symbols-outlined"> mail </span>
+      <p>horizon@ex.co.id</p>
+    </div>
+
+    <!--Footer-->
+    <div id="foot-placeholder"></div>
+    <script>
+      $(function () {
+        $("#foot-placeholder").load("footer.html");
+      });
+    </script>
+    <!--end of Footer-->
+  </body>
+</html>

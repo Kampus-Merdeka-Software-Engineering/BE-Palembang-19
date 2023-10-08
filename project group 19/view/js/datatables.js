@@ -1,5 +1,7 @@
 $(document).ready(function () {
-  var table = $("#location").DataTable();
+  var table = $("#location").DataTable({
+    responsive: true,
+  });
 
   $("#searchForm").on("submit", function (e) {
     e.preventDefault();

@@ -6,19 +6,19 @@ body {
 
 /* index */
 #background-video {
-  width: 100%;
   position: absolute;
-  margin: 0 0;
+  top: 0;
   left: 0;
   right: 0;
-  top: 0;
-  bottom: 0;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
   z-index: -1;
 }
 
 .container-1 {
   width: 100%;
-  height: 550px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,9 +27,9 @@ body {
 }
 
 .tagline {
-  width: calc(100% - 100px);
+  width: 50%;
   margin: 0 100px;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 b {
@@ -78,7 +78,7 @@ b {
 }
 
 .container-2 b {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .cards {
@@ -215,24 +215,25 @@ b {
 }
 
 .container-4 {
+  margin-top: 50px;
   width: 100%;
+  gap: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   font-family: "Inter";
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .container-4 img {
-  height: 375px;
-  width: 350px;
+  height: 300px;
   border-radius: 12px;
+  background-color: #354f5267;
 }
 
 .review {
-  height: 300px;
-  width: 500px;
+  margin-left: 20px;
 }
 
 .name p {
@@ -241,26 +242,15 @@ b {
 
 .review-text {
   height: 90px;
-  width: 400px;
+  width: 90%;
 }
 
 .review-text p {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .star img {
-  height: 30px;
-  width: 30px;
-}
-
-.photo-bg {
-  background-color: #cad2c5;
-  position: absolute;
-  width: 470px;
-  height: 170px;
-  left: 48%;
-  top: 1322px;
-  z-index: -1;
+  height: 20px;
 }
 
 .content-2 {
@@ -279,8 +269,23 @@ b {
   align-items: center; /* Center vertically */
 }
 
+.title-responsive {
+  display: none;
+}
+
 .green-bg {
   background-color: #84a98c;
+  height: 50%;
+  width: 100%;
+  z-index: -1;
+  margin: -250px 0;
+  position: absolute;
+  color: #84a98c;
+}
+
+.registergreen-bg {
+  background-color: #84a98c;
+  bottom: 180px;
   height: 50%;
   width: 100%;
   z-index: -1;
@@ -295,14 +300,28 @@ b {
   height: auto;
   border-radius: 20px;
   display: flex;
-  flex-direction: column; /* Stack form elements vertically */
-  align-items: center; /* Center form elements horizontally */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   box-shadow: -12px 12px rgba(204, 211, 211, 0.6);
+  text-align: center;
 }
 
 .wrapper {
   width: 75%;
-  margin-top: 30px;
+  margin: 30px 0;
+}
+
+.btn-log-in {
+  margin: 30px 0;
+}
+
+.btn-log-in button {
+  border-radius: 20px;
+  border: 0;
+  padding: 10px 50px;
+  background-color: #84a98c;
+  cursor: pointer;
 }
 
 .form {
@@ -530,6 +549,7 @@ b {
 .send-form {
   width: 100%;
   margin: 40px 50px;
+  margin-bottom: 0;
 }
 
 .identitas {
@@ -665,6 +685,10 @@ b {
   cursor: pointer;
 }
 
+.send-btn a {
+  text-decoration: none;
+}
+
 .send-btn button span {
   display: block;
   margin-left: 0.3em;
@@ -693,6 +717,130 @@ b {
   transform: scale(0.95);
 }
 
+.credit-card-form {
+  margin-top: 10%;
+  max-width: 400px;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.1);
+  background-color: #cad2c5;
+  text-align: center;
+  color: #424242;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.25);
+  opacity: 0;
+  transition: all 0.5s 0.1s;
+  z-index: 4000;
+}
+
+.credit-card-form h2 {
+  margin-bottom: 10%;
+  font-size: 24px;
+}
+
+.credit-card-form .form-group {
+  margin-bottom: 15px;
+}
+
+.credit-card-form label {
+  margin-top: 20px;
+  font-size: 13px;
+  display: block;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.credit-card-form b {
+  font-size: 18px;
+}
+
+.credit-card-form input[type="text"],
+.credit-card-form select {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  font-size: 16px;
+}
+
+.credit-card-form .form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.credit-card-form button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background-color: #84a98c;
+  color: #000000;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.credit-card-form button[type="submit"]:hover {
+  background-color: #7b9881;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.1);
+}
+
+.credit-card-form button[type="submit"]:focus {
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Image1 {
+  margin-top: 0;
+  width: 220px;
+}
+
+.popup {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+#popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+#popup:target .credit-card-form {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-close:link,
+.popup-close:visited {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 30px;
+  display: inline-block;
+  line-height: 1;
+  transition: all 0.3s;
+}
+
+.popup-close:hover,
+.popup-close:active {
+  color: #555;
+}
+
 @keyframes fly-1 {
   from {
     transform: translateY(0.1em);
@@ -700,5 +848,90 @@ b {
 
   to {
     transform: translateY(-0.1em);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #background-video {
+    height: 400px;
+  }
+  .tagline {
+    width: 75%;
+    font-size: 22px;
+    margin: 0 35px;
+  }
+  .btn button {
+    margin: 0 35px;
+  }
+  .cards {
+    gap: 50px;
+  }
+  .container-4 {
+    margin-bottom: 50px;
+  }
+  .review {
+    width: 80%;
+  }
+  .identitas {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .pengirim,
+  .penerima {
+    max-width: 100%;
+  }
+  .detail-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .left,
+  .right {
+    max-width: 100%;
+    margin: 0;
+  }
+  .left-left,
+  .left-right {
+    max-width: 100%;
+  }
+  .search .searchInput {
+    width: 100%;
+  }
+  .loc-table {
+    overflow-x: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  .content-2,
+  .content-reg {
+    flex-direction: column;
+    gap: 10px;
+    margin: 120px 0;
+  }
+  .green-bg,
+  .form-text-top {
+    display: none;
+  }
+  .form-container {
+    width: 80%;
+    margin-left: 5px;
+    box-shadow: -5px 5px rgba(204, 211, 211, 0.6);
+  }
+  .form-text {
+    margin: 0;
+  }
+  .title-responsive {
+    display: flex;
+    margin: 15px 0;
+    font-size: 20px;
+  }
+  .credit-card-form {
+    width: 70%;
+    max-width: 1000px;
+    margin: 150px 0;
   }
 }

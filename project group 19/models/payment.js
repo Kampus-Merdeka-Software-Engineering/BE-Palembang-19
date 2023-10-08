@@ -9,6 +9,14 @@ const Payment = sequelize.define("Payment", {
         autoIncrement: true, 
         allowNull: false,
     },
+    resi: {
+        type: DataTypes.STRING,
+        primaryKey: true,
+        allowNull: false,
+        validate: {
+            notEmpty: true,
+        },
+    },
     tipe_payment: {
         type: DataTypes.STRING,
         allowNull: false,
