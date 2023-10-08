@@ -90,11 +90,16 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+  .transparent-bg {
+    background-color: #cad2c5;
+  }
   .item {
+    display: block;
     width: 100%;
     text-align: center;
     order: 3;
     display: none;
+    transition: all 0.5s 0.3s;
   }
 
   .item.active {
@@ -129,5 +134,19 @@ nav {
 
   .bars::after {
     top: -5px;
+  }
+  .main-content ul li:not(.btn-login):not(.logo):not(.toggle)::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 40%;
+    width: 0;
+    height: 2px;
+    background-color: #354f52;
+    transition: width 0.2s ease-in-out;
+  }
+
+  .main-content ul li:not(.btn-login):not(.logo):not(.toggle):hover::after {
+    width: 20%;
   }
 }
