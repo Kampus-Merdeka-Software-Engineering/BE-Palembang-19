@@ -192,21 +192,38 @@
           <b>Pembayaran</b>
           <form>
             <div class="form-group">
-              <label for="card-number">Nomor Kartu</label>
-              <input type="text" id="card-number" placeholder="Nomor kartu" />
+              <label for="payment-type">Tipe Pembayaran</label>
+              <select name="payment-type" id="payment-type">
+                <option value="card">Debit/Kredit</option>
+                <option value="uang-elektronik">Uang Elektronik</option>
+              </select>
             </div>
-            <div class="form-group">
-              <label for="card-holder">Nama Pemegang</label>
-              <input type="text" id="card-holder" placeholder="Nama pemegang" />
+            <div class="form-group hidden-input" id="uang-elektronik">
+              <label for="phone-no">Nomor Telepon</label>
+              <input type="text" id="phone-no" placeholder="Nomor telepon" />
             </div>
-            <div class="form-row">
-              <div class="form-group form-column">
-                <label for="expiry-date">Tanggal Kadaluarsa</label>
-                <input type="text" id="expiry-date" placeholder="MM/YY" />
+            <div class="type-card hidden-input" id="type-card">
+              <div class="form-group">
+                <label for="card-number">Nomor Kartu</label>
+                <input type="text" id="card-number" placeholder="Nomor kartu" />
               </div>
-              <div class="form-group form-column">
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" placeholder="CVV" />
+              <div class="form-group">
+                <label for="card-holder">Nama Pemegang</label>
+                <input
+                  type="text"
+                  id="card-holder"
+                  placeholder="Nama pemegang"
+                />
+              </div>
+              <div class="form-row">
+                <div class="form-group form-column">
+                  <label for="expiry-date">Tanggal Kadaluarsa</label>
+                  <input type="text" id="expiry-date" placeholder="MM/YY" />
+                </div>
+                <div class="form-group form-column">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" placeholder="CVV" />
+                </div>
               </div>
             </div>
             <button
